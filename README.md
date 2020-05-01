@@ -55,8 +55,7 @@ private void WriteLogButton_Click(object sender, EventArgs e)
 ```
 
 ## Latest version
-1.0.0.0
-Current usage rights are stated below.
+1.0.0.0 - Current usage rights are stated below.
 
 ## License
 It can be used for commercial purposes without any restrictions and attribution.
