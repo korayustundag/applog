@@ -2,7 +2,7 @@
 Log tool for applications
 
 ## Installation
-1. Download applog.dll
+1. [Download applog.dll](https://github.com/korayustundag/applog/raw/master/Released%20Versions/AppLog_1.0.0.0.zip)
 2. Add reference your Visual Studio project or other compiler
 
 ## Usage
