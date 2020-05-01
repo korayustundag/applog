@@ -8,21 +8,28 @@ Log tool for applications
 ## Usage
 
 ```csharp
-// We make the definition first.
+// Using
 using applog;
 
+// Code
+LogSystem myLogs = new LogSystem();
+myLogs.WriteNow("path","my own logs");
+```
+
+## Examples
+```csharp
 // As an example, we want to click on any button to write a log.
 private void WriteLogButton_Click(object sender, EventArgs e)
 {
   LogSystem myLogs = new LogSystem();
-  myLogs.WriteNow("path","my own logs");
+  myLogs.WriteNow(@"C:\Program Files\My Company Folder\My App Folder\Logs\", "Firs Log Writed");
 }
 
-// Let's learn whether logs are written when the button is clicked.
+// Let's find out if the logs are written when the button is clicked and leave the Time stamp.
 private void WriteLogButton_Click(object sender, EventArgs e)
 {
   LogSystem myLogs = new LogSystem();
-  if (myLogs.WriteNow("path", "my own log"))
+  if (myLogs.WriteNow(@"C:\Program Files\My Company Folder\My App Folder\Logs\", "Write Button Clicked[Time: " + DateTime.Now + "]"))
   {
     MessageBox.Show("Process completed!");
   }
@@ -38,7 +45,7 @@ private void WriteLogButton_Click(object sender, EventArgs e)
   LogSystem myLogs = new LogSystem();
   try
   {
-    if (myLogs.WriteNow("path", "my own log"))
+    if (myLogs.WriteNow(@"C:\Program Files\My Company Folder\My App Folder\Logs\", "my own log"))
     {
       MessageBox.Show("Process completed!");
     }
